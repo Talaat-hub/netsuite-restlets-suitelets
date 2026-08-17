@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<restlet scriptid="customscript_rl_mt_salesorder">
+    <description>Sales Order RESTlet — create &amp; list orders</description>
+    <isinactive>F</isinactive>
+    <name>RL MT Sales Order</name>
+    <notifyemails></notifyemails>
+    <notifyowner>T</notifyowner>
+    <scriptfile>[/SuiteScripts/rl_mt_salesorder.js]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_rl_mt_salesorder">
+            <allroles>F</allroles>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <runasrole>ADMINISTRATOR</runasrole>
+            <status>RELEASED</status>
+            <title>RL MT Sales Order</title>
+        </scriptdeployment>
+    </scriptdeployments>
+</restlet>

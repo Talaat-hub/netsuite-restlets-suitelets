@@ -1,0 +1,13 @@
+{
+  "name": "netsuite-restlets-suitelets",
+  "version": "1.0.0",
+  "description": "NetSuite SuiteScript 2.1 portfolio project: RESTlet + Suitelet CRUD platform for a custom Employee record, Map/Reduce and Scheduled Script background jobs, a Sales Order RESTlet, and a Node/Express front end that consumes it via OAuth 1.0a TBA. Includes a full Jest unit-testing harness with mocked N/* modules.",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "@types/jest": "29.5.14",
+    "@oracle/suitecloud-unit-testing": "^1.7.0"
+  }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NetSuite Sales Orders</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+    <h1>NetSuite Sales Orders</h1>
+    <p class="sub">Create new orders and browse recent ones — backed by a NetSuite RESTlet.</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Create Sales Order</h2>
+        <form id="orderForm" novalidate>
+            <div class="row">
+                <label>Customer ID <span class="hint">(internal id)</span>
+                    <input type="number" name="entity" required min="1" placeholder="e.g. 87" />
+                </label>
+                <label class="grow">Memo (optional)
+                    <input type="text" name="memo" maxlength="300" placeholder="Reference / note" />
+                </label>
+            </div>
+
+            <h3>Line Items</h3>
+            <table class="lines">
+                <thead>
+                    <tr><th>Item ID</th><th>Quantity</th><th>Rate</th><th></th></tr>
+                </thead>
+                <tbody id="linesBody"></tbody>
+            </table>
+            <button type="button" id="addLineBtn" class="btn-secondary">+ Add line</button>
+
+            <div class="actions">
+                <button type="submit" id="submitBtn" class="btn-primary">Create Order</button>
+                <button type="reset"  id="resetBtn"  class="btn-secondary">Reset</button>
+            </div>
+        </form>
+        <div id="formMsg" class="msg" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+        <div class="card-head">
+            <h2>Recent Orders</h2>
+            <button type="button" id="refreshBtn" class="btn-secondary">Refresh</button>
+        </div>
+        <div id="ordersMsg" class="msg" role="status" aria-live="polite"></div>
+        <div class="table-wrap">
+            <table id="ordersTable">
+                <thead>
+                    <tr><th>ID</th><th>Tran #</th><th>Date</th><th>Customer</th><th>Memo</th><th>Total</th><th>Status</th></tr>
+                </thead>
+                <tbody id="ordersBody"><tr><td colspan="7" class="muted">Loading…</td></tr></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

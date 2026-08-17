@@ -1,0 +1,18 @@
+<suitelet scriptid="customscript_sl_mt_emp_dash">
+    <name>SL MT Employee Dashboard</name>
+    <notifyadmins>F</notifyadmins>
+    <notifyemails/>
+    <notifyowner>F</notifyowner>
+    <scriptfile>[/SuiteScripts/sl_mt_employee_dashboard.js]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_sl_mt_emp_dash">
+            <title>SL MT Employee Dashboard</title>
+            <isdeployed>T</isdeployed>
+            <isonline>F</isonline>
+            <loglevel>DEBUG</loglevel>
+            <status>RELEASED</status>
+            <allroles>T</allroles>
+            <allemployees>T</allemployees>
+        </scriptdeployment>
+    </scriptdeployments>
+</suitelet>

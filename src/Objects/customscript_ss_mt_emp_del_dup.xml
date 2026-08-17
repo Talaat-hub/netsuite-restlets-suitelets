@@ -1,0 +1,13 @@
+<scheduledscript scriptid="customscript_ss_mt_emp_del_dup">
+  <name>SS MT Employee Delete Duplicate</name>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/ss_employee_dedup.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ss_mt_emp_del_dup">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>SS MT Employee Delete Duplicate</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

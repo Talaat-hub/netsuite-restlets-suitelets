@@ -1,0 +1,20 @@
+<suitelet scriptid="customscript_sl_mt_emp_analytics">
+  <name>SL MT Employee Analytics</name>
+  <notifyemails></notifyemails>
+  <notifygroup></notifygroup>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/EMP_Analytics/suitelet/sl_mt_emp_analytics.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_sl_mt_emp_analytics">
+      <allemployees>T</allemployees>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>SL MT Employee Analytics</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

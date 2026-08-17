@@ -1,0 +1,21 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>netsuite-restlets-suitelets</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+      <feature required="false">CREATESUITEBUNDLES</feature>
+    </features>
+    <objects>
+      <object>customrecord_emp_mahmoud</object>
+    </objects>
+    <files>
+      <file>/SuiteScripts/rl_employee.js</file>
+      <file>/SuiteScripts/sl_mt_employee_dashboard.js</file>
+      <file>/SuiteScripts/mr_mt_mass_delete.js</file>
+      <file>/SuiteScripts/ss_employee_dedup.js</file>
+      <file>/SuiteScripts/rl_mt_salesorder.js</file>
+      <file>/SuiteScripts/EMP_Analytics/suitelet/sl_mt_emp_analytics.js</file>
+    </files>
+  </dependencies>
+</manifest>

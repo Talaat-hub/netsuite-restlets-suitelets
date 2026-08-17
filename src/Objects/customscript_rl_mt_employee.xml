@@ -1,0 +1,16 @@
+<restlet scriptid="customscript_rl_mt_employee">
+    <name>RL MT Employee</name>
+    <notifyadmins>F</notifyadmins>
+    <notifyemails/>
+    <notifyowner>F</notifyowner>
+    <scriptfile>[/SuiteScripts/rl_employee.js]</scriptfile>
+    <scriptdeployments>
+        <scriptdeployment scriptid="customdeploy_rl_mt_employee">
+            <title>RL MT Employee</title>
+            <isdeployed>T</isdeployed>
+            <loglevel>DEBUG</loglevel>
+            <status>RELEASED</status>
+            <allroles>T</allroles>
+        </scriptdeployment>
+    </scriptdeployments>
+</restlet>

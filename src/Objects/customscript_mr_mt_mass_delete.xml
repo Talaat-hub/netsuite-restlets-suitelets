@@ -1,0 +1,32 @@
+<mapreducescript scriptid="customscript_mr_mt_mass_delete">
+  <name>MR MT Employee Mass Delete</name>
+  <notifyowner>F</notifyowner>
+  <scriptfile>[/SuiteScripts/mr_mt_mass_delete.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_mass_del_mode">
+      <accesslevel>2</accesslevel>
+      <defaultvalue>ALL</defaultvalue>
+      <description>Delete mode: ALL, JOBTITLE, CITY, or EMAIL</description>
+      <fieldtype>TEXT</fieldtype>
+      <ismandatory>T</ismandatory>
+      <label>Delete Mode</label>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_mass_del_filter">
+      <accesslevel>2</accesslevel>
+      <description>Filter value (e.g., &quot;Developer&quot; for JOBTITLE mode, &quot;Cairo&quot; for CITY mode). Leave empty for ALL mode.</description>
+      <fieldtype>TEXT</fieldtype>
+      <ismandatory>F</ismandatory>
+      <label>Filter Value</label>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_mr_mt_mass_delete">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>MR MT Employee Mass Delete</title>
+      <custscript_mass_del_mode>ALL</custscript_mass_del_mode>
+      <custscript_mass_del_filter/>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>
